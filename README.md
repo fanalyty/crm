@@ -33,11 +33,13 @@ uvicorn backend:app --reload --port 8000
 The backend will be running at http://localhost:80002. Frontend Setup (React)Assuming you are using a standard React setup (like Vite or Create React App):# Install dependencies
 npm install @reduxjs/toolkit react-redux lucide-react
 
+2. Frontend Setup (React)
+
+Assuming you are using a standard React setup (like Vite or Create React App):
+
+# Install dependencies
+npm install @reduxjs/toolkit react-redux lucide-react
+
 # Start the development server
 npm start # or `npm run dev` if using Vite
-Ensure Tailwind CSS is configured in your React environment.🎥 Video Presentation Outline (Recommendation)UI Demo (0:00 - 3:00): Show the split screen. Emphasize that the form 
-is read-only. Type "I met with Dr. Smith today, sentiment was highly positive." Show the form auto-populating.Edit Tool Demo (3:00 - 5:00): Type "Wait, the sentiment was 
-actually neutral." Show only the sentiment field updating via the edit_interaction tool.Additional Tools Demo (5:00 - 8:00): Ask the AI to schedule a follow-up, ask for Dr. 
-Smith's history, and ask a product dosage question.Architecture Walkthrough (8:00 - 12:00): Show backend.py. Explain how langgraph.prebuilt orchestrates the tools using the 
-Groq LLM. Show frontend.jsx and explain how Redux catches the JSON payload from FastAPI to update the form state.Summary (12:00 - 15:00): Conclude with your understanding of 
-Generative UI and how this architecture reduces manual data entry for field reps.
+Ensure Tailwind CSS is configured in your React environment.
